@@ -1,16 +1,7 @@
-import React,{useState} from 'react';
-import {View,Text, TouchableOpacity, Image} from 'react-native'
-import { useNavigation } from '@react-navigation/core';
+import React from 'react';
+import {View, TouchableOpacity, Image, Text} from 'react-native'
 
-const Vue1 = (props) => {
-    const [state, setState]= useState()
-    const navigation = useNavigation()
-
-    const AllerVersEntrepreneuriat = () => {
-        console.log("je teste")
-        navigation.navigate('Profile')
-    }
-
+const Vue1Component = () => {
     return (
         <View style={{flex:1, flexDirection:'row'}}>
             {console.log(props)}
@@ -44,4 +35,4 @@ const Vue1 = (props) => {
     );
 };
 
-export default Vue1;
+export default Vue1Component;
