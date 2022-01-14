@@ -1,6 +1,7 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native'
+import {View, Text, TouchableOpacity, Image, StyleSheet, FlatList} from 'react-native'
 import { useNavigation } from '@react-navigation/core';
+import Vue1Component from './Vue1Component';
 
 const MesLivres = () => {
     const navigation = useNavigation()
@@ -12,10 +13,14 @@ const MesLivres = () => {
 
     const Acheter = () => {
         console.log("acheter")
+        /*<FlatList
+        data={{key:"a"}}
+        keyExtractor={()=> item.id.toString()}
+        renderItem={({item}) => <Vue1Component/>}/>*/
     }
 
     return (
-    <TouchableOpacity
+      <TouchableOpacity
          style={styles.main_container}
          onPress={() => AllerADetail("Entreprenariat")}>
         <Image
@@ -47,7 +52,7 @@ const MesLivres = () => {
     );
 };
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({  
     main_container: {
         height: 190,
         flexDirection: 'row'

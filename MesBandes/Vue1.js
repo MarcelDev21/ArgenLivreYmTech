@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {View,Text, TouchableOpacity, Image} from 'react-native'
+import {View,Text, TouchableOpacity, Image, FlatList} from 'react-native'
 import { useNavigation } from '@react-navigation/core';
 
 const Vue1 = (props) => {
